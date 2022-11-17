@@ -9,7 +9,13 @@ void Main()
 
     string question = Console.ReadLine();
 
-    MooseSays(RandomAnswer());
+
+    while (question != "")
+    {
+        MooseSays(RandomAnswer() + "  Ask me something else!");
+        question = Console.ReadLine();
+
+    }
 
 
 }
